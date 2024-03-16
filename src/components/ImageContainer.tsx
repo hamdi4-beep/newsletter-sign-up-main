@@ -5,7 +5,7 @@ function ImageContainer() {
     return (
         <div className="image-container">
             <img
-                src={window.innerWidth >= 375 ? IllustrationDesktopURL : IllustrationMoileURL}
+                src={window.innerWidth > 375 ? IllustrationDesktopURL : IllustrationMoileURL}
                 alt=''
             />
         </div>
