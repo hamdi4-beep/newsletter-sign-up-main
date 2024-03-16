@@ -1,11 +1,11 @@
 import FormComponent from './FormComponent'
-import ImageContainer from './ImageContainer'
+import IllustrationImage from './IllustrationImage'
 import ListItems from './ListItems'
 
 function SignUpContainer() {
     return (
         <div className='sign-up-container'>
-            <ImageContainer />
+            <IllustrationImage />
 
             <div className="content-container">
                 <div className="content">
