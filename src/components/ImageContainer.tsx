@@ -1,5 +1,3 @@
-import * as React from 'react'
-
 import IllustrationMoileURL from '../assets/images/illustration-sign-up-mobile.svg'
 import IllustrationDesktopURL from '../assets/images/illustration-sign-up-desktop.svg'
 

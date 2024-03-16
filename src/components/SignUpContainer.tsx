@@ -8,40 +8,42 @@ function SignUpContainer() {
         <div className='sign-up-container'>
             <ImageContainer />
 
-            <div className="content">
-                <h2>Stay updated!</h2>
-                <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div className="content-container">
+                <div className="content">
+                    <h2>Stay updated!</h2>
+                    <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-                <ul>
-                    <li>
-                        <img
-                            src={IconSuccessUrl}
-                            alt=""
-                        />
+                    <ul>
+                        <li>
+                            <img
+                                src={IconSuccessUrl}
+                                alt=""
+                            />
 
-                        Product discovery and building what matters
-                    </li>
+                            Product discovery and building what matters
+                        </li>
 
-                    <li>
-                        <img
-                            src={IconSuccessUrl}
-                            alt=""
-                        />
+                        <li>
+                            <img
+                                src={IconSuccessUrl}
+                                alt=""
+                            />
 
-                        Measuring to ensure updates are a success
-                    </li>
+                            Measuring to ensure updates are a success
+                        </li>
 
-                    <li>
-                        <img
-                            src={IconSuccessUrl}
-                            alt=""
-                        />
-                        
-                        And much more!
-                    </li>
-                </ul>
+                        <li>
+                            <img
+                                src={IconSuccessUrl}
+                                alt=""
+                            />
+                            
+                            And much more!
+                        </li>
+                    </ul>
 
-                <FormComponent />
+                    <FormComponent />
+                </div>
             </div>
         </div>
     )
