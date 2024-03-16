@@ -1,0 +1,71 @@
+@forward 'globals';
+
+@import './globals/variables';
+
+body {
+    background-color: $neutral-clr-dark-slate-grey;
+}
+
+.sign-up-container {
+    max-width: 724px;
+    width: 100%;
+    background-color: white;
+}
+
+.content {
+    padding: 1.6em;
+
+    h2 {
+        color: $neutral-clr-dark-slate-grey;
+        font-size: 2em;
+
+        & + p, & {
+            margin-bottom: .6em;
+        }
+    }
+
+    label {
+        font-weight: bold;
+        color: $neutral-clr-dark-slate-grey;
+        display: block;
+        margin-block: .8em;
+        margin-bottom: .4em;
+    }
+
+    .cta-btn, input {
+        padding: 1em;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        font: inherit;
+    }
+
+    .cta-btn {
+        background-color: $neutral-clr-dark-slate-grey;
+        color: white;
+        margin-top: 1.2em;
+    }
+
+    ul {
+        margin-block: 1.3em;
+
+        li {
+            display: flex;
+            gap: 1em;
+
+            &:not(:first-child) {
+                margin-top: 1em;
+            }
+
+            img {
+                display: block;
+                width: 5%;
+            }
+        }
+    }
+}
+
+form {
+    margin-top: 2em;
+    display: block;
+}
