@@ -1,10 +1,13 @@
-import SvgImg from '../assets/images/illustration-sign-up-mobile.svg'
+import * as React from 'react'
+
+import IllustrationMoileURL from '../assets/images/illustration-sign-up-mobile.svg'
+import IllustrationDesktopURL from '../assets/images/illustration-sign-up-desktop.svg'
 
 function ImageContainer() {
     return (
         <div className="image-container">
             <img
-                src={SvgImg}
+                src={window.innerWidth >= 375 ? IllustrationDesktopURL : IllustrationMoileURL}
                 alt=''
             />
         </div>
