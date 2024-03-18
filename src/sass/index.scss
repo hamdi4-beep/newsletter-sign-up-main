@@ -90,6 +90,10 @@ body {
         background-color: $neutral-clr-dark-slate-grey;
         color: white;
         margin-top: 1.2em;
+
+        &:hover {
+            background-image: linear-gradient(-45deg, #FF6A3A 0%, #FF527B 100%);
+        }
     }
 }
 

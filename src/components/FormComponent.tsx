@@ -8,11 +8,13 @@ function FormComponent() {
         e.preventDefault()
 
         const formElem = e.currentTarget as HTMLFormElement
-        const formData = new FormData(formElem)
+        const [[, email]] = new FormData(formElem)
 
-        navigate("/success", { state: {
-            email: formData.get('email')
-        } })
+        navigate("/success", {
+            state: {
+                email
+            }
+        })
     }
 
     return (
