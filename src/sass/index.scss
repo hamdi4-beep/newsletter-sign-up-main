@@ -6,28 +6,74 @@ body {
     background-color: $neutral-clr-dark-slate-grey;
 }
 
-.sign-up-container {
-    background-color: white;
+.success-container {
+    padding: 3em;
+    width: 50%;
+    margin-inline: auto;
+
+    h1 {
+        color: $neutral-clr-dark-slate-grey;
+        font-size: 2.8em;
+        margin-block: .3em;
+        line-height: 1em;
+    }
+
+    p {
+        margin-block: .8em;
+
+        span {
+            font-weight: bold;
+        }
+    }
 }
 
-.content {
-    padding: 1.6em;
+.sign-up-container,
+.success-container {
+    background-color: white;
+    border-radius: 20px;
 
-    h2 {
-        color: $neutral-clr-dark-slate-grey;
-        font-size: 2em;
-
-        & + p, & {
-            margin-bottom: .6em;
+    .content {
+        padding: 1.6em;
+    
+        h2 {
+            color: $neutral-clr-dark-slate-grey;
+            font-size: 2em;
+    
+            & + p, & {
+                margin-bottom: .6em;
+            }
+        }
+    
+        label {
+            font-weight: bold;
+            color: $neutral-clr-dark-slate-grey;
+            display: block;
+            margin-block: .8em;
+            margin-bottom: .4em;
+        }
+    
+        ul {
+            margin-block: 1.3em;
+    
+            li {
+                display: flex;
+                gap: 1em;
+    
+                &:not(:first-child) {
+                    margin-top: 1em;
+                }
+    
+                img {
+                    display: block;
+                    width: 5%;
+                }
+            }
         }
     }
 
-    label {
-        font-weight: bold;
-        color: $neutral-clr-dark-slate-grey;
-        display: block;
-        margin-block: .8em;
-        margin-bottom: .4em;
+    .success-icon {
+        width: 4rem;
+        margin-bottom: 1.2em;
     }
 
     .cta-btn, input {
@@ -42,24 +88,6 @@ body {
         background-color: $neutral-clr-dark-slate-grey;
         color: white;
         margin-top: 1.2em;
-    }
-
-    ul {
-        margin-block: 1.3em;
-
-        li {
-            display: flex;
-            gap: 1em;
-
-            &:not(:first-child) {
-                margin-top: 1em;
-            }
-
-            img {
-                display: block;
-                width: 5%;
-            }
-        }
     }
 }
 

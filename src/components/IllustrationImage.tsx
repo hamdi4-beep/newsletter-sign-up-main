@@ -5,7 +5,7 @@ function IllustrationImage() {
     return (
         <div className="illustration-container">
             <img
-                src={window.innerWidth > 375 ? IllustrationDesktopURL : IllustrationMobileURL}
+                src={window.innerWidth >= 768 ? IllustrationDesktopURL : IllustrationMobileURL}
                 alt='illustration image of statistics'
             />
         </div>

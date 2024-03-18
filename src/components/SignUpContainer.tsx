@@ -1,5 +1,5 @@
-import FormComponent from './FormComponent'
 import IllustrationImage from './IllustrationImage'
+import FormComponent from './FormComponent'
 import ListItems from './ListItems'
 
 function SignUpContainer() {
