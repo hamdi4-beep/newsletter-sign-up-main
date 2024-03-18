@@ -5,17 +5,28 @@
         place-content: center;
     }
 
+    .content {
+        padding: 3em !important;
+    }
+
+    div.success-container {
+        padding: 3em !important;
+        margin-inline: auto;
+        width: 50%;
+        height: 100% !important;
+        border-radius: 15px !important;
+    }
+
     .sign-up-container {
         display: flex;
         flex-direction: row-reverse;
-        border-radius: 15px;
+        border-radius: 15px !important;
         align-items: center;
-        width: 80%;
+        width: 90%;
         margin-inline: auto;
     }
 
-    .illustration-container img {
-        height: inherit;
+    .illustration-container {
         padding: 1em;
     }
 }

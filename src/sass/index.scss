@@ -7,9 +7,11 @@ body {
 }
 
 .success-container {
-    padding: 3em;
-    width: 50%;
-    margin-inline: auto;
+    padding: 1.4em;
+    height: 100vh;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         color: $neutral-clr-dark-slate-grey;
@@ -20,6 +22,7 @@ body {
 
     p {
         margin-block: .8em;
+        margin-bottom: auto;
 
         span {
             font-weight: bold;
@@ -30,8 +33,7 @@ body {
 .sign-up-container,
 .success-container {
     background-color: white;
-    border-radius: 20px;
-
+ 
     .content {
         padding: 1.6em;
     
