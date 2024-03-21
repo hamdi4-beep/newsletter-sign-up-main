@@ -2,6 +2,8 @@ import * as React from "react"
 import {useNavigate} from 'react-router-dom'
 
 function FormComponent() {
+    const inputRef = React.createRef<HTMLInputElement>()
+    const [isInvalid, setIsInvalid] = React.useState(false)
     const navigate = useNavigate()
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -17,18 +19,30 @@ function FormComponent() {
         })
     }
 
+    const handleClick = () => {
+        const inputElem = inputRef.current
+        setIsInvalid(!inputElem?.checkValidity() as boolean) // flips the boolean value so that it is true
+    }
+
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="email">Email address</label>
+            <label htmlFor="email">
+                Email address
+                {isInvalid && (<span>Valid email required</span>)}
+            </label>
 
             <input
                 type="email"
-                placeholder='email@company.com'
-                name='email'
-                id='email'
+                id="email"
+                name="email"
+                ref={inputRef}
+                required
             />
             
-            <button className="cta-btn">Subscribe to monthly newsletter</button>
+            <button
+                className="cta-btn"
+                onClick={handleClick}
+            >Subscribe to monthly newsletter</button>
         </form>
     )
 }

@@ -100,4 +100,17 @@ body {
 form {
     margin-top: 2em;
     display: block;
+
+    label {
+        display: flex !important;
+        justify-content: space-between;
+        margin-bottom: .6em !important;
+    }
+
+    span {
+        display: inline-block;
+        margin-left: auto;
+        text-align: right;
+        color: $primary-clr-tomato;
+    }
 }
