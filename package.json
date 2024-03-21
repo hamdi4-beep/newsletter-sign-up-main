@@ -1,11 +1,14 @@
 {
   "name": "newsletter-sign-up-main",
+  "homepage": "http://hamdi4-beep.github.io/newsletter-sign-up-main/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -22,6 +25,7 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "gh-pages": "^6.1.1",
     "react-router-dom": "^6.22.3",
     "sass": "^1.72.0",
     "typescript": "^5.2.2",

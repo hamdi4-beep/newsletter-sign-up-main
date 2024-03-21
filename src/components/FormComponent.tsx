@@ -2,8 +2,8 @@ import * as React from "react"
 import {useNavigate} from 'react-router-dom'
 
 function FormComponent() {
-    const inputRef = React.createRef<HTMLInputElement>()
     const [isInvalid, setIsInvalid] = React.useState(false)
+    const inputRef = React.createRef<HTMLInputElement>()
     const navigate = useNavigate()
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -12,7 +12,7 @@ function FormComponent() {
         const formElem = e.currentTarget as HTMLFormElement
         const [[, email]] = new FormData(formElem)
 
-        navigate("/success", {
+        navigate("/newsletter-sign-up-main/success", {
             state: {
                 email
             }
@@ -28,7 +28,10 @@ function FormComponent() {
         <form onSubmit={handleSubmit}>
             <label htmlFor="email">
                 Email address
-                {isInvalid && (<span>Valid email required</span>)}
+
+                {isInvalid && (
+                    <span>Valid email required</span>
+                )}
             </label>
 
             <input

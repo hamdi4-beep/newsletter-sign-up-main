@@ -11,9 +11,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' element={<SignUpContainer />} />
-        <Route path='/success' element={<SuccessComponent />} />
-      </Routes>
+          <Route path='/newsletter-sign-up-main' element={<SignUpContainer />} />
+          <Route path='/newsletter-sign-up-main/success' element={<SuccessComponent />} />
+        </Routes>
     </div>
   )
 }
